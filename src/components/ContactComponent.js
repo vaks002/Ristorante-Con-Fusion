@@ -27,6 +27,7 @@ class Contact extends Component {
         }
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleBlur =  this.handleBlur.bind(this);
     }
 
     handleInputChange(event) {
@@ -76,7 +77,6 @@ class Contact extends Component {
         
         if (this.state.touched.email && email.split('').filter(x => x === '@').length !==1)
             errors.email = "email should contain a @ ";
-        
         return errors;
                 
 
