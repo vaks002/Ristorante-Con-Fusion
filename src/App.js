@@ -3,7 +3,7 @@ import './App.css';
 import Main from './components/MainComponent';
 import {BrowserRouter} from 'react-router-dom';
 import { Provider } from 'react-redux';
-import  {ConfigureState} from './redux./configureStore';
+import  {ConfigureState} from './redux/configureStore';
 
 const store = ConfigureState();
 
